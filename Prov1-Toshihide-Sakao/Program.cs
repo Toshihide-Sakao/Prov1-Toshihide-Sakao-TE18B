@@ -16,7 +16,7 @@ namespace Prov1_Toshihide_Sakao
             Console.ReadLine();
 
             Buyer guest = new Buyer();
-            guest.Buy(books[1]);
+            guest.Buy(newBook);
             Console.ReadLine();
         }
     }
