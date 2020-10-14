@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Prov1_Toshihide_Sakao
 {
@@ -6,7 +7,17 @@ namespace Prov1_Toshihide_Sakao
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            List<Book> books = new List<Book>();
+            Book newBook = new Book();
+            
+            books.Add(newBook);
+
+            newBook.PrintInfo();
+            Console.ReadLine();
+
+            Buyer guest = new Buyer();
+            guest.Buy(books[1]);
+            Console.ReadLine();
         }
     }
 }
